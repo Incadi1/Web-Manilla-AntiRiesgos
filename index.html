@@ -24,7 +24,7 @@
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="/img/Logo.png" alt="logo" style="width:100%">
+  <img src="./img/Logo.png" alt="logo" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-teal">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>INICIO</p>
@@ -35,7 +35,7 @@
   </a>
   <a href="#contactenos" class="w3-bar-item w3-button w3-padding-large w3-hover-teal">
     <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACTENOS</p>
+    <p>INTEGRANTES</p>
   </a>
 </nav>
 
@@ -44,7 +44,7 @@
   <div class="w3-bar w3-light-grey w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">INICIO</a>
     <a href="#sensores" class="w3-bar-item w3-button" style="width:25% !important">SENSORES</a>
-    <a href="#contactenos" class="w3-bar-item w3-button" style="width:25% !important">CONTACTENOS</a>
+    <a href="#integrantes" class="w3-bar-item w3-button" style="width:25% !important">INTEGRANTES</a>
   </div>
 </div>
 
@@ -54,7 +54,7 @@
   <header class="w3-container w3-padding-32 w3-center w3-light-grey" id="inicio">
     <h1 class="w3-jumbo"><span class="w3-hide-small">MANILLA</span> ANTIRIESGOS.</h1>
     <p>"Unidos podremos mejorar"</p>
-    <img src="/img/Fondo.png" alt="fondo" class="w3-image" width="992" height="1108">
+    <img src="./img/Fondo.png" alt="fondo" class="w3-image" width="992" height="1108">
   </header>
 
   <!-- About Section -->
@@ -72,8 +72,13 @@
           <li class="w3-teal w3-xlarge w3-padding-32">Sensor 1 - Temperatura</li>
           <li class="w3-padding-16">Ingresa para ver los datos del sensor</li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">INGRESAR</button>
+            <p><form action="nodo.php" method="post">             
+              <button class="w3-button w3-teal w3-padding-large w3-hover-black" type="submit" name="enviar" value="ENVIAR">INGRESAR</button>
+            </form></p>
           </li>
+
+          
+
         </ul>
       </div>
 
@@ -82,37 +87,27 @@
           <li class="w3-teal w3-xlarge w3-padding-32">Sensor 2</li>
           <li class="w3-padding-16">Ingresa para ver los datos del sensor</li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">INGRESAR</button>
+            <p><form action="nodo.php" method="post">             
+              <button class="w3-button w3-teal w3-padding-large w3-hover-black" type="submit" name="enviar" value="ENVIAR">INGRESAR</button>
+            </form></p>
           </li>
         </ul>
       </div>
-    <!-- End Grid/Pricing tables -->
     </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contactenos">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
+  <!-- integrantes -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="integrantes">
+    <h2 class="w3-text-teal">INTEGRANTES</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Juan Diego Bustamante</p>
+      <p><i class="fa fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Juan Renza</p>
+      <p><i class="fa fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Maria Brand</p>
+      <p><i class="fa fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Ingrid Carmona Diaz</p>
     </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
+  <!-- integrantes -->
+  
   </div>
   
     <!-- Footer -->
@@ -123,7 +118,6 @@
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <!-- End footer -->
   </footer>
 
